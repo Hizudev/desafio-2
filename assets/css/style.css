@@ -1,0 +1,238 @@
+/*  colores Utilizados: #211bb6 #D3CEDF #F2D7D9 #A18CD1 #FBC2EB #FFF #000
+    fuentes utilizadas: Roboto / Fredoka One
+*/
+
+
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Fredoka One', cursive;
+}
+
+.titulo{
+    color: #211bb6;
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* HEADER */
+
+.textos-pheader{
+    height: 460px;
+    font-size: 4em;
+    color: #211bb6;
+    padding-left: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textos-pheader h2{
+    font-size: 0.6em;
+}
+
+
+/* MENU DE CAJAS */
+
+.contenedor{
+    padding: 100px;
+    background-color: #D3CEDF;
+}
+
+.cont-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #F2D7D9;
+    width: 20%;
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    height: 400px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+
+.card img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.card p{
+    margin-top: 10px;
+}
+
+.btn{
+    width: 50%;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+    background-image: linear-gradient(to top, #A18CD1 0%, #FBC2EB 100%);
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #FFF;
+}
+
+.card:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    transform: scale(1.03);
+}
+
+
+/* GALERIA PRODUCTOS */
+
+.products{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.makeup{
+    flex-direction: column;
+    background-color: #9CB4CC;
+}
+
+.product-box{
+    display: flex;
+}
+
+.text-product{
+    padding: 100px;
+    text-align: center;
+}
+
+.skincare{
+    background-color: #748DA6;
+}
+
+.products img{
+    border-radius: 10%;
+    box-shadow: 0 0 10px 0 rgba(0,0,0, 1);
+}
+
+.product-tittle{
+    color: #211bb6;
+    padding: 1em;
+}
+
+.product-descrip{
+    color: white;
+}
+
+.price{
+    color: white;
+    margin-top: 5em;
+}
+
+
+/* FOOTER */
+
+.pfooter{
+    background-color: #D3CEDF;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.footer-tittle{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.pfooter p{
+    display: inline-block;
+}
+
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.instagram{
+    display: inline-block;
+    flex-direction: column;
+}
+
+.instagram p,
+.map p{
+    font-family: 'Fredoka One', cursive;
+    font-size: larger;
+}
+
+.instagram i{
+    padding-left: 80px;
+}
+
+.map img{
+    border: solid 1px #000;
+    margin-left: 10px;
+}
+
+
+/* EFECTO OLA PARA CADA SECTION */
+
+.pheader{
+    background-image: url("../imgs/bannerPuki.png");
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.secciones{
+    height: 150px; overflow: hidden;
+}
+.secciones svg{
+    height: 100%; width: 100%;
+}
+
+.ola1 path{
+    stroke: none; fill: #D3CEDF;
+}
+
+.ola2{
+    background-color: #D3CEDF;
+}
+
+.ola2 path{
+    stroke: none; fill: #9CB4CC;
+}
+
+.ola3{
+    background-color: #9CB4CC;
+}
+
+.ola3 path{
+    stroke: none; fill: #748DA6;
+}
+
+.ola4{
+    background-color: #748DA6;
+}
+
+.ola4 path{
+    stroke: none; fill: #D3CEDF;
+}
